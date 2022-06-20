@@ -1,0 +1,154 @@
+/*! test design *
+
+* {
+    border: 1px solid blue;
+}
+
+
+/**/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Merriweather', Times, serif;
+    font-size: 5.6rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 40px 0 0;
+}
+
+h4 {
+    font-family: 'Merriweather', Times, serif;
+    font-size: 2.0rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 40px 0 0;
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 8px auto;
+}
+
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.bar:before,
+.bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    padding: 0 3.5%;
+}
+
+.banner {
+    position: relative;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.float {
+    float: left;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 25%;
+}
+
+.bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bar li {
+    float: left;
+}
+
+.bar a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 20px 16px 25px;
+}
+
+.bar a:hover {
+    background-color: whitesmoke;
+}
+
+.text-white {
+    color: white;
+}
+
+.third {
+    width: 33.33333%;
+}
+
+.bg-grey {
+    background-color: #efefef;
+}
+
+.bg-light {
+    background-color: #f7f7f7;
+    padding-bottom: 5%;
+}
+
+.padding-mid {
+    padding: 6px 23px 30px;
+}
+
+.padding-16 {
+    padding: 0 16px;
+}
+
+.text-a {
+    text-decoration: none;
+    color: rgb(22, 209, 223);
+    font-size: 1.8rem;
+}

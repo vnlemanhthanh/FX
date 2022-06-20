@@ -1,0 +1,53 @@
+/**/
+
+@media only screen and (max-width:767.99px) {
+    /* Mobile phone */
+    .x-bg-grey,
+    .x-bg-light {
+        background-color: initial;
+    }
+    .x-container {
+        padding: 0 2rem;
+    }
+    #nav.x-container {
+        padding: 0;
+    }
+    .x-nav {
+        justify-content: flex-start;
+    }
+    .x-nav-block {
+        padding-left: 0.8rem;
+    }
+    .x-nav-link {
+        padding: 4.8rem 1.2rem;
+    }
+    .x-text-white {
+        color: initial;
+        border-bottom: 1px solid rgb(182, 178, 169);
+    }
+    .x-absolute {
+        position: static;
+    }
+    #banner img {
+        display: none;
+    }
+    .x-img {
+        padding: 3.2rem 4.8rem 3.2rem 0;
+    }
+    .h1,
+    .h2 {
+        font-size: 4.8rem;
+        font-weight: 700;
+        padding-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .h4 {
+        font-size: 3.6rem;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+    #footer .x-col {
+        padding-bottom: 4rem;
+    }
+}

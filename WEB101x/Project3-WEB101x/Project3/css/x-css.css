@@ -1,0 +1,287 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 100%;
+    margin: 0;
+}
+
+P {
+    margin-top: 0;
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+
+b,
+.b {
+    font-weight: bold;
+}
+
+.x-serif {
+    font-family: serif;
+}
+
+.x-sans-serif {
+    font-family: sans-serif;
+}
+
+.x-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width:767px) {
+    .x-container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .x-container {
+        max-width: 92%;
+    }
+}
+
+@media (min-width:992px) {
+    .x-container {
+        max-width: 90%;
+    }
+}
+
+.x-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.x-row>* {
+    width: 100%;
+    max-width: 100%;
+}
+
+.x-col {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width:767px) {
+    /* Mobile phone */
+    .x-col.sm1 {
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    .x-col.sm2 {
+        flex: 0 0 auto;
+        width: 16.66%;
+    }
+    .x-col-sm3 {
+        flex: 0 0 auto;
+        width: 24.99%;
+    }
+    .x-col.sm4 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+    .x-col.sm5 {
+        flex: 0 0 auto;
+        width: 41.66%;
+    }
+    .x-col.sm6 {
+        flex: 0 0 auto;
+        width: 49.99%;
+    }
+    .x-col.sm7 {
+        flex: 0 0 auto;
+        width: 58.33%;
+    }
+    .x-col.sm8 {
+        flex: 0 0 auto;
+        width: 66.66%;
+    }
+    .x-col.sm9 {
+        flex: 0 0 auto;
+        width: 74.99%;
+    }
+    .x-col.sm10 {
+        flex: 0 0 auto;
+        width: 83.33%;
+    }
+    .x-col.sm11 {
+        flex: 0 0 auto;
+        width: 91.66%;
+    }
+    .x-col.sm12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    /* Tablet */
+    .x-col.md1 {
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    .x-col.md2 {
+        flex: 0 0 auto;
+        width: 16.66%;
+    }
+    .x-col-md3 {
+        flex: 0 0 auto;
+        width: 24.99%;
+    }
+    .x-col.md4 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+    .x-col.md5 {
+        flex: 0 0 auto;
+        width: 41.66%;
+    }
+    .x-col.md6 {
+        flex: 0 0 auto;
+        width: 49.99%;
+    }
+    .x-col.md7 {
+        flex: 0 0 auto;
+        width: 58.33%;
+    }
+    .x-col.md8 {
+        flex: 0 0 auto;
+        width: 66.66%;
+    }
+    .x-col.md9 {
+        flex: 0 0 auto;
+        width: 74.99%;
+    }
+    .x-col.md10 {
+        flex: 0 0 auto;
+        width: 83.33%;
+    }
+    .x-col.md11 {
+        flex: 0 0 auto;
+        width: 91.66%;
+    }
+    .x-col.md12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    /* Desktop */
+    .x-col.lg1 {
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    .x-col.lg2 {
+        flex: 0 0 auto;
+        width: 16.66%;
+    }
+    .x-col-lg3 {
+        flex: 0 0 auto;
+        width: 24.99%;
+    }
+    .x-col.lg4 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+    .x-col.lg5 {
+        flex: 0 0 auto;
+        width: 41.66%;
+    }
+    .x-col.lg6 {
+        flex: 0 0 auto;
+        width: 49.99%;
+    }
+    .x-col.lg7 {
+        flex: 0 0 auto;
+        width: 58.33%;
+    }
+    .x-col.lg8 {
+        flex: 0 0 auto;
+        width: 66.66%;
+    }
+    .x-col.lg9 {
+        flex: 0 0 auto;
+        width: 74.99%;
+    }
+    .x-col.lg10 {
+        flex: 0 0 auto;
+        width: 83.33%;
+    }
+    .x-col.lg11 {
+        flex: 0 0 auto;
+        width: 91.66%;
+    }
+    .x-col.lg12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.x-nav {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.x-nav-block {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+.x-nav-item {
+    display: inline-block;
+    list-style: none;
+}
+
+.x-nav-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: .8rem 1.6rem;
+}
+
+.x-relative {
+    position: relative;
+}
+
+.x-absolute {
+    position: absolute;
+}
+
+.x-text-white {
+    color: white;
+}
+
+.x-text-black {
+    color: black;
+}
+
+.x-bg-darkgrey {
+    background-color: #727272;
+}
+
+.x-bg-grey {
+    background-color: #efefef;
+}
+
+.x-bg-light {
+    background-color: #f7f7f7;
+}

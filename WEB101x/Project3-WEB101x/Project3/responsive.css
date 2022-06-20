@@ -1,0 +1,123 @@
+.x-img {
+    width: 100%;
+    height: auto;
+}
+
+.x-nav-link {
+    color: rgb(197, 189, 189);
+}
+
+@media only screen and (min-width:992px) {
+    /* Desktop */
+    #nav.x-container {
+        padding: 0 5rem;
+    }
+    .x-row {
+        padding: 0 1.6rem;
+    }
+    .x-row>* {
+        padding: 0 1.6rem;
+    }
+    .x-img {
+        padding-bottom: 3.6rem;
+    }
+    .x-bg-darkgrey {
+        background-color: initial;
+    }
+    .x-nav-link {
+        color: initial;
+        padding: 2.4rem 2.4rem;
+    }
+    .x-nav-block:nth-child(1) {
+        margin-right: auto;
+    }
+    .x-nav-block:nth-child(2) {
+        margin-left: auto;
+    }
+    .x-absolute {
+        top: 15%;
+        left: 6.6rem;
+    }
+    .h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    #banner p {
+        font-size: 2rem;
+    }
+    .h2 {
+        padding: 4rem 3.2rem 0;
+        margin-top: -4rem;
+        margin-bottom: 0;
+    }
+    .main-content p {
+        margin: 0;
+        padding: 0 3.2rem 4rem;
+    }
+    #footer .x-col {
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991.99px) {
+    /* Tablet */
+    .x-container {
+        padding: 0 1.6rem;
+    }
+    #nav.x-container {
+        padding: 0;
+    }
+    .x-bg-grey,
+    .x-bg-light {
+        background-color: initial;
+    }
+    .x-nav-link {
+        padding: 4.8rem 2.4rem 3.6rem;
+    }
+    .x-nav-block:nth-child(1) {
+        margin-right: auto;
+    }
+    .x-nav-block:nth-child(2) {
+        margin-left: auto;
+    }
+    .x-text-white {
+        color: initial;
+        border-bottom: 1px solid rgb(182, 178, 169);
+    }
+    .x-absolute {
+        position: static;
+    }
+    #banner img {
+        display: none;
+    }
+    .x-img {
+        padding: 2.4rem 2rem 2.4rem 0.4rem;
+    }
+    .h1,
+    .h2 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        padding-top: 4rem;
+        margin: 0 auto;
+    }
+    .h4 {
+        font-size: 2.8rem;
+        padding-top: 4rem;
+        margin: 0 auto;
+    }
+    .h1 {
+        padding-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2.4rem;
+    }
+    #footer .x-col {
+        padding-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width:767.99px) {
+    /* Mobile phone */
+}

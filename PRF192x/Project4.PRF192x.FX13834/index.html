@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 4 - PRF192x - FX13834</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">My News</a>
+            <button class="btn btn-primary" type="button" id="button">
+                <span class="bi bi-search" id="load"> Search</span>
+            </button>
+        </nav>
+        <div id="modal1" class="modal py-5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <!-- <h5 class="modal-title">Modal title</h5> -->
+                        <button type="button" class="btn-close"></button>
+                    </div>
+
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-group d-flex col-md-12">
+                                <label for="keywords" class="col-3">Keywords: <span style="color: red;">*</span></label>
+                                <input type="text" class="col-9" id="keywords" name="keywords" placeholder="Viet Nam" value="" required>
+                            </div>
+                            <div class="form-group d-flex col-md-12">
+                                <label for="in" class="col-3">In :</label>
+                                <select type="text" class="col-9" id="in" name="in" value="">
+                                    <option value="">--Chose</option>
+                                    <option value="title">Title</option>
+                                    <option value="description">Description</option>
+                                    <option value="content">Content</option>
+                                </select>
+                            </div>
+                            <div class="form-group d-flex col-md-12">
+                                <label for="language" class="col-3">Language:</label>
+                                <select type="text" class="col-9" id="language" name="language" value="">
+                                    <option value="">--Chose</option>
+                                    <option value="en">English</option>
+                                    <option value="fr">French</option>
+                                    <option value="zh">Chinese</option>
+                                </select>
+                            </div>
+                            <div class="form-group d-flex col-md-12">
+                                <label for="from" class="col-3">From:</label>
+                                <input type="date" class="col-9" id="from" name="from" placeholder="" value="2022-01-01">
+                            </div>
+                            <div class="form-group d-flex col-md-12">
+                                <label for="to" class="col-3">To:</label>
+                                <input type="date" class="col-9" id="to" name="to" placeholder="" value="2022-01-31">
+                            </div>
+                            <div class="form-group d-flex col-md-12">
+                                <input type="button" class="w-100 btn btn-lg btn-primary" id="search" value="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-dialog">
+                <i class="bi bi-speedometer" style="font-size: 20rem; color: cornflowerblue;"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Main -->
+    <main class="main container-fluid row" id="main">
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container mt-auto">
+        <h6>Copyright 2022 by funix.edu.vn </h6>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

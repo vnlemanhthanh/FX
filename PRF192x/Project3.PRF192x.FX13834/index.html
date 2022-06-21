@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Project 3 - PRF192x - FX13834</title>
+</head>
+
+<body>
+    <h1 class="text-center">Class Marksheet</h1>
+    <!-- Form import -->
+    <section class="container">
+        <h2 class="text-center">Thông tin học sinh</h2>
+        <form action="" class="frm">
+            <div class="form-group d-flex col-md-8">
+                <label for="name" class="col-4">Họ tên: <span style="color: red;">*</span></label>
+                <input type="text" class="control col-8" id="name" name="name" placeholder="Nguyễn Văn A" value="">
+                <span class="error">This field is required</span>
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <label for="grade" class="col-4">Khối: <span style="color: red;">*</span></label>
+                <select type="text" class="control col-8" id="grade" name="grade" value="">
+                    <option value="">--Chọn</option>
+                </select>
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <label for="class-name" class="col-4">Lớp: <span style="color: red;">*</span></label>
+                <select type="text" class="control col-8" id="class" name="class" value=""></select>
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <label for="math" class="col-4">Điểm toán: <span style="color: red;">*</span></label>
+                <input type="text" class="control col-8" id="math" name="math" placeholder="0" value="">
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <label for="physic" class="col-4">Điểm lý: <span style="color: red;">*</span></label>
+                <input type="text" class="control col-8" id="physic" name="physic" placeholder="0" value="">
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <label for="chem" class="col-4">Điểm hóa: <span style="color: red;">*</span></label>
+                <input type="text" class="control col-8" id="chem" name="chem" placeholder="0" value="">
+            </div>
+            <div class="form-group d-flex col-md-8">
+                <input type="button" class="form-group col-6 btn btn-primary" id="import" value="Nhập">
+            </div>
+        </form>
+    </section>
+    <!-- Table export -->
+    <section class="container">
+        <h2>Danh sách học sinh</h2>
+        <table class="table">
+            <thead>
+                <tr class="">
+                    <th class="col-1">STT</th>
+                    <th class="col-3">Họ tên</th>
+                    <th class="col-1">Khối</th>
+                    <th class="col-2">Lớp</th>
+                    <th class="col-1">Toán</th>
+                    <th class="col-1">Lý</th>
+                    <th class="col-1">Hóa</th>
+                    <th class="col-2">Trung bình</th>
+                </tr>
+            </thead>
+            <tbody id="sheet-students" class=""></tbody>
+        </table>
+        <div class="d-flex row mx-5">
+            <input type="button" class="btn btn-success col-5" id="cal-mean" value="Tính điểm trung bình">
+            <input type="button" class="btn btn-success col-5" id="cal-stupro" value="Xác định học sinh giỏi">
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

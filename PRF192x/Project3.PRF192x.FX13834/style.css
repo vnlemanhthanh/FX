@@ -1,0 +1,46 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #4267b2;
+}
+
+form,
+.form-group {
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    vertical-align: center;
+}
+
+label,
+input,
+select,
+.btn {
+    margin: 4px auto;
+}
+
+.error {
+    display: none;
+    margin-left: 10px;
+}
+
+.error_show {
+    color: red;
+    margin-left: 10px;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+
+input.valid {
+    border: 2px solid green;
+}

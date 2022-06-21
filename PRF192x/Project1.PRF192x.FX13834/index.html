@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng JavaScript đầu tiên</title>
+</head>
+
+<body>
+    <div id="start">
+        <p>Click the button to display an alert box.</p>
+        <button onclick="notify()">Try it</button>
+    </div>
+    <p id="name" style="font-weight: bold;"></p>
+    <p id="city" style="font-weight: bold;"></p>
+    <p id="mobile" style="font-weight: bold;"></p>
+    <p id="age" style="font-weight: bold;"></p>
+    <p id="email" style="font-weight: bold;"></p>
+    <p id="job" style="font-weight: bold;"></p>
+    <div id="next-step" style="display: none;">
+        <button>Bước tiếp theo</button>
+    </div>
+
+    <script>
+        function notify() {
+            alert('Chào mừng bạn đến với ứng dụng JavaScript đầu tiên');
+
+            var noEmpty = '(Vui lòng không bỏ trống)'; //Template 
+
+            /* User's name */
+            var uName = prompt('Hãy nhập tên của bạn', 'Nguyễn Văn A');
+            while (uName == '' || uName == null) { //Kiểm tra điều kiện người dùng để trống và ấn OK hoặc Cancel
+                uName = prompt(`Hãy nhập lại tên của bạn ${noEmpty}`);
+            }
+            document.getElementById('name').innerHTML = 'Tên của bạn: ' + uName; //Gán nội dung cho p element có id='name'
+
+            /* User's city */
+            var uCity = prompt('Hãy nhập thành phố bạn đang sống', 'Hà Nội');
+            if (uCity == '' || uCity == null) { //Kiểm tra điều kiện người dùng để trống và ấn OK hoặc Cancel
+                uCity = prompt(`Hãy nhập lại thành phố bạn đang sống ${noEmpty}`);
+            }
+            document.getElementById('city').innerHTML = 'Thành phố bạn đang sống: ' + uCity; //Gán nội dung cho p element có id='city'
+
+            /* User's mobile */
+            var uMobile = prompt('Hãy nhập số điện thoại của bạn', '0912345678');
+            if (uMobile == '' || uMobile == null) { //Kiểm tra điều kiện người dùng để trống và ấn OK hoặc Cancel
+                uMobile = prompt(`Hãy nhập lại số điện thoại của bạn ${noEmpty}`);
+            }
+            document.getElementById('mobile').innerHTML = 'Số điện thoại của bạn: ' + uMobile; //Gán nội dung cho p element có id='mobile'
+
+            /* User's age */
+            var uBornYear = prompt('Hãy nhập năm sinh:', '2003');
+            var currentYear = new Date().getFullYear();
+            while (uBornYear >= currentYear || isNaN(uBornYear) || uBornYear == '' || uBornYear == null) {
+                //Kiểm tra điều kiện người dùng nhập vào không bé hơn hiện tại, không ở dạng số, để trống và ấn OK hoặc Cancel
+                uBornYear = prompt(`Hãy nhập lại năm sinh: \n("Năm sinh phải là số và bé hơn năm hiện tại")`);
+
+            }
+
+            document.getElementById('age').innerHTML = 'Tuổi hiện tại của bạn: ' + (currentYear - uBornYear);
+
+            //Tính và Gán nội dung cho p element có id='age'
+
+            /* User's email */
+            var uEmail = prompt('Hãy nhập email của bạn', 'abc@funix.edu.vn');
+            if (uEmail == '' || uEmail == null) { //Kiểm tra điều kiện người dùng để trống và ấn OK hoặc Cancel
+                uEmail = prompt(`Hãy nhập lại email của bạn ${noEmpty}`);
+            }
+            document.getElementById('email').innerHTML = 'Email của bạn: ' + uEmail; //Gán nội dung cho p element có id='email'
+
+            /* User's job */
+            var uJob = prompt('Hãy nhập nghề nghiệp của bạn', 'Siêu nhân');
+            if (uJob == '' || uJob == null) { //Kiểm tra điều kiện người dùng để trống và ấn OK hoặc Cancel
+                uJob = prompt(`Hãy nhập lại nghề nghiệp của bạn ${noEmpty}`);
+            }
+            document.getElementById('job').innerHTML = 'Nghề nghiệp của bạn: ' + uJob; //Gán nội dung cho p element có id='job'
+
+            document.getElementById('start').style.display = 'none'; //Ẩn div element có id='start'
+            document.getElementById('next-step').style.display = 'block'; //Hiển thị div element có id='next-step'
+        }
+    </script>
+
+</body>
+
+</html>

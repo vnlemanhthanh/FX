@@ -1,0 +1,18 @@
+<component name="CopyrightManager">
+  <settings>
+    <module2copyright>
+      <element module="All" copyright="vnlemanhthanh" />
+      <element module="Non-Project Files" copyright="vnlemanhthanh" />
+      <element module="Project Files" copyright="vnlemanhthanh" />
+      <element module="Open Files" copyright="vnlemanhthanh" />
+      <element module="Scratches and Consoles" copyright="vnlemanhthanh" />
+      <element module="Production" copyright="vnlemanhthanh" />
+      <element module="Tests" copyright="vnlemanhthanh" />
+    </module2copyright>
+    <LanguageOptions name="JAVA" />
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="separateAfter" value="true" />
+      <option name="box" value="true" />
+    </LanguageOptions>
+  </settings>
+</component>

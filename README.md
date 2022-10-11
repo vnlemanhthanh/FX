@@ -1,2 +1,1 @@
-# FUNiX
- funix.edu.vn
+# fresher

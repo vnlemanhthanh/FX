@@ -1,2 +1,2 @@
-# FUNiX
+# fx
  funix.edu.vn

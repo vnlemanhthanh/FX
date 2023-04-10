@@ -1,0 +1,941 @@
+
+Wed Aug 24 00:56:55 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+121       |Golden dsfDildo     |       203|    404.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+43        |343                 |       432|     34.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 5
+Input ID to search = 129
+Result: 129       |Golden Difsdfldo    |       304|    505.00
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 5
+Input ID to search = 0
+-1
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 6
+Input the bcode to delete = 0
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 6
+Input the bcode to delete = 121
+
+Deleted!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+43        |343                 |       432|     34.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 7
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 9
+ID        |Title               |  Quantity|     Price
+43        |343                 |       432|     34.00
+129       |Golden Difsdfldo    |       304|    505.00
+125       |Golden fsdDildo     |       202|    303.00
+123       |Golden dsDildo      |       201|    202.00
+121       |Golden dsfDildo     |       203|    404.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 4
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 9
+ID        |Title               |  Quantity|     Price
+43        |343                 |       432|     34.00
+129       |Golden Difsdfldo    |       304|    505.00
+125       |Golden fsdDildo     |       202|    303.00
+123       |Golden dsDildo      |       201|    202.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 10
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+43        |343                 |       432|     34.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 7
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+43        |343                 |       432|     34.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Wed Aug 24 01:00:47 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+43        |343                 |       432|     34.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 11
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 4
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 7
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+121       |Golden Dildo        |       200|    100.00
+121       |Golden dsfDildo     |       203|    404.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 8
+Quantity = 3011 --> 101111000011
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Wed Aug 24 01:15:46 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 11
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 7
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+          |Golden Difsdfldo    |      3011|    512.00
+121       |Golden Dildo        |       200|    100.00
+121       |Golden dsfDildo     |       203|    404.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+129       |Golden Difsdfldo    |       304|    505.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Mon Sep 26 21:56:12 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Mon Sep 26 21:59:30 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Mon Sep 26 22:56:41 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Mon Sep 26 23:02:01 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Fri Sep 30 21:16:46 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Fri Sep 30 21:48:16 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Fri Sep 30 23:52:12 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 
+Mon Nov 07 22:26:07 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 11
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 8
+Quantity = 200 --> 11001000
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Mon Nov 07 22:27:19 ICT 2022
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Fri Jan 13 02:57:53 ICT 2023
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 3
+ID        |Title               |  Quantity|     Price
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 1
+ID        |Title               |  Quantity|     Price
+121       |Golden Dildo        |       200|    100.00
+123       |Golden dsDildo      |       201|    202.00
+125       |Golden fsdDildo     |       202|    303.00
+121       |Golden dsfDildo     |       203|    404.00
+129       |Golden Difsdfldo    |       304|    505.00
+          |Golden Difsdfldo    |      3011|    512.00
+
+Successfully!
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 0
+Good bye. Have a nice day!
+Mon Jan 23 17:17:48 ICT 2023
+
+------------------MENU--------------------
+1. Load data from file and display.
+2. Input & add to the end.
+3. Display data.
+4. Save product list to file.
+5. Search by ID
+6. Delete by ID
+7. Sort by ID.
+8. Convert to Binary.
+9. Load to stack and display.
+10. Load to queue and display.
+11. DataSample.
+0. Exit.
+You choose: 

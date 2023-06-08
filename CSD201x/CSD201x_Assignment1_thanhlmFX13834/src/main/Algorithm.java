@@ -273,6 +273,9 @@ public class Algorithm implements IAlgorithm {
                 fileContent = fileContent.concat(i + " ");
             }
         }
+        if (fileContent.equals("")) {
+            fileContent += -1;
+        }
 
         System.out.println("Indexs: "+ fileContent);
         writeFile("./src/resource/output4.txt", fileContent, true);
@@ -291,11 +294,11 @@ public class Algorithm implements IAlgorithm {
      * */
     @Override
     public int binarySearch(float[] arr, int left, int right, float value) {
-
+        arr = insertionSort(arr);
         int indexToLook = (int) Math.floor((right + left) / 2);
-        while ((arr[indexToLook] != value) && (right > left)) {
-            if (arr[indexToLook] > value) { // case to search on the left
-                right = indexToLook - 1;
+        while ((right > left)) {
+            if (arr[indexToLook] >= value) { // case to search on the left
+                right = indexToLook;
             } else {
                 left = indexToLook + 1;
             }
@@ -303,7 +306,7 @@ public class Algorithm implements IAlgorithm {
         }
         if (arr[indexToLook] == value) {
             String content = indexToLook + "";
-            System.out.println("Indext of first element: " + indexToLook);
+            System.out.println("Index of first element: " + indexToLook);
             writeFile("./src/resource/output5.txt" , content, false);
             return indexToLook;
         }

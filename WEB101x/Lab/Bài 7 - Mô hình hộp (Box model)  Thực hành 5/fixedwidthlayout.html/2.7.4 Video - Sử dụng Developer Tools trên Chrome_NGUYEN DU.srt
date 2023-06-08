@@ -1,0 +1,908 @@
+﻿1
+00:00:00,350 --> 00:00:04,359
+Trong chuỗi bài học này, chúng ta sẽ tìm hiểu về những phần hay sử dụng nhất về
+
+2
+00:00:04,360 --> 00:00:05,778
+các công cụ phát triển Chrome.
+
+3
+00:00:05,778 --> 00:00:11,400
+Và sau cùng, đây sẽ là những kiến thức nền tảng mà bạn cần để cải thiện
+
+4
+00:00:11,400 --> 00:00:12,019
+khả năng phát triển của bạn.
+
+5
+00:00:12,218 --> 00:00:16,980
+Điều này chủ yếu là phục vụ giải trí và việc phát triển, nhưng ngoài ra cũng
+
+6
+00:00:16,980 --> 00:00:20,460
+đem đến những thứ khác. Chẳng hạn như tôi đang thực hiện các lời gọi ajax có thể thấy ở phần front-end.
+
+7
+00:00:20,460 --> 00:00:23,569
+Nhưng lời gọi này cũng cho phép bạn kiểm tra nội dung
+
+8
+00:00:23,768 --> 00:00:27,038
+lấy được thông qua phần back-end. Thông thường
+
+9
+00:00:27,039 --> 00:00:30,949
+chúng ta sẽ tìm hiểu qua bốn điều mà bạn chắc là hay sử dụng nhất
+
+10
+00:00:30,949 --> 00:00:34,740
+trong các công cụ phát triển Chrome. Và một điều nữa bạn cần biết là:
+
+11
+00:00:34,939 --> 00:00:38,589
+đây là khái niệm giống với
+
+12
+00:00:38,590 --> 00:00:43,340
+các công cụ như Firebug dành cho Firefox. Cho nên kể cả trong trường hợp bạn không dùng Chrome,
+
+13
+00:00:43,340 --> 00:00:47,340
+thì những điều này sẽ vẫn hữu ích. Chúng ta sẽ bắt đầu
+
+14
+00:00:47,340 --> 00:00:50,810
+với công cụ Element Inspector - Công cụ kiểm tra các thành phần.
+
+15
+00:00:51,009 --> 00:00:55,448
+Công cụ này về cơ bản cho phép bạn xem tất cả các mã markup trên trang của bạn.
+
+16
+00:00:55,448 --> 00:00:58,839
+Về cách chúng được xây dựng và các kiểu định dạng của chúng nữa.
+
+17
+00:00:58,840 --> 00:01:01,749
+Đầu tiên hãy xem qua những loại tệp tin nào
+
+18
+00:01:01,948 --> 00:01:05,289
+mà chúng ta sẽ làm việc. Trong trình soạn thảo văn bản của tôi,
+
+19
+00:01:05,290 --> 00:01:09,530
+tôi chỉ có một tài liệu như ở đây. Trong đó có một thẻ paragraph
+
+20
+00:01:09,530 --> 00:01:13,599
+và dĩ nhiên chúng ta có tất cả các thẻ cơ bản mà chúng ta sẽ dùng.
+
+21
+00:01:13,599 --> 00:01:19,469
+Chúng ta có một thẻ title ở đây và ngoài ra có một trang định dạng nữa trong thư mục CSS.
+
+22
+00:01:19,469 --> 00:01:22,789
+Tôi sẽ đi tiếp và tạo liên kết tới trang định dạng này.
+
+23
+00:01:22,790 --> 00:01:26,030
+Tôi sẽ nhập css/app.css
+
+24
+00:01:26,030 --> 00:01:31,109
+và tiếp tục làm mới lại trang này. Việc đó đã làm thay đổi màu nền
+
+25
+00:01:31,109 --> 00:01:33,239
+sang màu xám. Ngoài ra chúng ta cũng có một
+
+26
+00:01:33,239 --> 00:01:36,349
+thẻ định dạng cho phần paragraph ở đây nữa.
+
+27
+00:01:36,349 --> 00:01:41,109
+Việc bạn phát triển và thay đổi định dạng xung quanh, hay thay đổi
+
+28
+00:01:41,109 --> 00:01:42,390
+các mã markup,
+
+29
+00:01:42,390 --> 00:01:45,489
+đôi khi sẽ dễ dàng hơn để thực hiện trong Chrome.
+
+30
+00:01:45,688 --> 00:01:48,919
+Vì vậy hãy thay đổi tất cả các định dạng mà bạn cần ở trong Chrome.
+
+31
+00:01:48,920 --> 00:01:53,219
+Sau đó bạn có thể đi tiếp, sao chép và dán các định dạng đó ngược trở lại trang định dạng của bạn.
+
+32
+00:01:53,219 --> 00:01:56,289
+Hoặc bạn có thể chỉ chỉnh sửa các thành phần trên trang của bạn,
+
+33
+00:01:56,290 --> 00:02:01,629
+để xem điều gì sẽ xảy ra. Giờ thì hãy xem những điều cơ bản tạo nên
+
+34
+00:02:01,828 --> 00:02:04,828
+công cụ kiểm tra thành phần là gì. Bây giờ
+
+35
+00:02:04,828 --> 00:02:08,149
+việc tôi cần làm chỉ là click chuột phải trên trang và chọn
+
+36
+00:02:08,149 --> 00:02:09,080
+Inspect element.
+
+37
+00:02:09,080 --> 00:02:12,940
+Đó là một cách nhanh để làm việc đó, ngoài ra bạn cũng có thể truy cập công cụ từ trình đơn này,
+
+38
+00:02:13,139 --> 00:02:19,000
+ở góc bên này. Dĩ nhiên là việc click chuột phải và chọn Inspect element sẽ
+
+39
+00:02:19,000 --> 00:02:19,759
+đưa bạn tới
+
+40
+00:02:19,759 --> 00:02:23,280
+tab element ở ngay đây.
+
+41
+00:02:23,280 --> 00:02:27,650
+Bảng ở đây sẽ cho bạn xem các thành phần trên trang của bạn.
+
+42
+00:02:27,650 --> 00:02:32,430
+Chẳng hạn như, chúng ta có thể đi tới thẻ head, thẻ meta, thẻ title
+
+43
+00:02:32,430 --> 00:02:37,879
+và liên kết tới các tài nguyên ở đây. Nhưng những thứ đó ít quan trọng hơn một chút so với
+
+44
+00:02:37,879 --> 00:02:41,250
+những gì chúng ta sẽ làm ở đây. Chúng ta có thể
+
+45
+00:02:41,250 --> 00:02:45,479
+duyệt qua những thứ này. Chúng ta cũng có thể chỉnh sửa nội dung. Bây giờ
+
+46
+00:02:45,479 --> 00:02:47,149
+hãy xem nhanh cách thực hiện như thế nào.
+
+47
+00:02:47,150 --> 00:02:51,740
+Sau đó chúng ta sẽ di chuyển về phía khu vực này, nơi có thể xem tất cả các định dạng.
+
+48
+00:02:51,740 --> 00:02:55,340
+Chẳng hạn như, nếu tôi muốn thay đổi đoạn văn bản ở đây.
+
+49
+00:02:55,539 --> 00:03:00,150
+Tôi có thể click đúp lên đó và tiếp tục thêm vào có lẽ là một dấu
+
+50
+00:03:00,150 --> 00:03:01,039
+chấm than.
+
+51
+00:03:01,039 --> 00:03:04,829
+Giờ thì gõ enter và thay đổi đó sẽ được tự động phản ánh
+
+52
+00:03:04,830 --> 00:03:09,030
+trong khu vực trình duyệt ở đây. Ngoài ra chúng ta cũng có thể
+
+53
+00:03:09,229 --> 00:03:14,259
+xóa các thành phần, bằng cách gõ phím cách để xóa đi
+
+54
+00:03:14,259 --> 00:03:18,959
+tất cả các thành phần. Nhưng tôi sẽ làm mới lại để xem chúng trở lại, bởi vì các thành phần này đều được cung cấp
+
+55
+00:03:18,959 --> 00:03:19,840
+từ các tệp tin.
+
+56
+00:03:19,840 --> 00:03:22,909
+Ngoài ra, chúng ta có thể click chuột phải ở đây và
+
+57
+00:03:22,909 --> 00:03:27,859
+chỉnh sửa văn bản giống như các bạn đã thấy. Tuy nhiên chúng ta còn có thể chỉnh sửa cả mã HTML.
+
+58
+00:03:27,860 --> 00:03:32,269
+Vì vậy chúng ta có thể vào đây nếu muốn và thêm
+
+59
+00:03:32,269 --> 00:03:36,580
+thành phần bổ sung vào. Chúng ta có thể thêm vào thẻ span ở đây.
+
+60
+00:03:36,580 --> 00:03:40,400
+Nhập vào hello rồi click ra khỏi khu vực này.
+
+61
+00:03:40,699 --> 00:03:45,079
+Giờ thì đoạn mã được tự động cập nhật và đã thêm vào mã markup vào đó cho bạn.
+
+62
+00:03:45,080 --> 00:03:48,959
+Vậy giờ thì chúng ta đã xem xung quanh khu vực này rồi.
+
+63
+00:03:48,959 --> 00:03:54,120
+Tiếp theo chúng ta sẽ di chuyển sang khu vực này, với công việc mà bạn sẽ sử dụng
+
+64
+00:03:54,419 --> 00:03:55,259
+thường xuyên nhất,
+
+65
+00:03:55,259 --> 00:04:02,099
+dành cho các kiểu định dạng. Chẳng hạn như, thẻ paragraph có một định dạng gắn với nó. Chúng ta có thể
+
+66
+00:04:02,099 --> 00:04:02,739
+xem định dạng đó
+
+67
+00:04:02,739 --> 00:04:07,430
+trong trang định dạng ở đây. Phần body cũng có một màu nền
+
+68
+00:04:07,430 --> 00:04:11,180
+nhưng chúng ta sẽ tập trung vào thành phần paragraph này.
+
+69
+00:04:11,180 --> 00:04:15,990
+Đối với thành phần paragraph này, chúng ta có thể thấy ở đây điều đầu tiên
+
+70
+00:04:15,990 --> 00:04:19,040
+là các định dạng kiểu agent và đó là định dạng mặc định,
+
+71
+00:04:19,040 --> 00:04:22,910
+áp dụng cho thành phần này
+
+72
+00:04:22,910 --> 00:04:27,730
+bởi trình duyệt. Ngoài ra chúng ta cũng có định dạng ước tính nữa. Chúng ta sẽ bàn về
+
+73
+00:04:27,730 --> 00:04:29,320
+các thiết lập này trong một vài phút nữa.
+
+74
+00:04:29,519 --> 00:04:32,560
+Bạn có thể thấy rằng, chúng ta có một thuộc tính
+
+75
+00:04:32,560 --> 00:04:35,860
+display block trên thành phần này. Ngoài ra có cả chiều dài lấy tự động,
+
+76
+00:04:35,860 --> 00:04:39,610
+có thuộc tính căn lề và có cả chiều rộng nữa.
+
+77
+00:04:39,610 --> 00:04:42,850
+Đó là những gì được tính toán theo các định dạng.
+
+78
+00:04:42,850 --> 00:04:47,260
+Phần bạn thấy ở đây hiển thị mô hình dạng hộp, nếu bạn chưa quen với mô hình dạng hộp
+
+79
+00:04:47,459 --> 00:04:50,539
+thì không sao, tôi sẽ giải thích từng phần
+
+80
+00:04:50,540 --> 00:04:54,360
+đó biểu diễn điều gì trong lúc chúng ta xem qua. Phần ở giữa này,
+
+81
+00:04:54,360 --> 00:04:58,540
+là chiều dài và chiều rộng của thành phần khi ở trên trang.
+
+82
+00:04:58,540 --> 00:05:02,420
+Nếu đi lên trên một chút chúng ta sẽ biết có lớp đệm nào trên thành phần này hay không.
+
+83
+00:05:02,420 --> 00:05:05,260
+Lúc này chúng ta không có bất kỳ lớp đệm nào cho thành phần này.
+
+84
+00:05:05,459 --> 00:05:08,799
+Đi tiếp và tôi sẽ thêm vào
+
+85
+00:05:08,800 --> 00:05:12,579
+một lớp đệm về bên trái rộng 20px.
+
+86
+00:05:12,579 --> 00:05:16,800
+Tiếp tục làm mới lại trang này, giờ thì bạn có thể thấy lớp đệm
+
+87
+00:05:16,800 --> 00:05:20,220
+được biểu diễn bởi phần màu xanh lá cây hay
+
+88
+00:05:20,519 --> 00:05:25,849
+hộp màu xanh lá cây ở đây, với độ rộng hộp là 20px và điều này cũng được cập nhật ở đây, cho bạn biết về
+
+89
+00:05:25,850 --> 00:05:26,350
+kích thước của nó.
+
+90
+00:05:26,649 --> 00:05:30,239
+Điều này thực sự hữu ích khi bạn làm việc với thành phần vị trí trong
+
+91
+00:05:30,240 --> 00:05:31,180
+CSS.
+
+92
+00:05:31,180 --> 00:05:34,300
+Bạn có thể kiểm tra mỗi thành phần phía ngoài,
+
+93
+00:05:34,300 --> 00:05:39,230
+bằng cách di chuyển con trỏ qua chúng. Về phần đường biên, ở đây chúng ta không có đường biên nào.
+
+94
+00:05:39,529 --> 00:05:43,719
+Nếu có thì chúng ta sẽ thấy đường biên cũng có kích thước
+
+95
+00:05:43,720 --> 00:05:47,240
+trên thành phần đó, và chú ý vị trí của phần này nữa,
+
+96
+00:05:47,439 --> 00:05:51,629
+20px đệm ở phía bên trái. Nếu có phần đệm bên phải
+
+97
+00:05:51,629 --> 00:05:55,930
+hay ở trên cùng thì chúng ta sẽ thấy chúng đặt ở chỗ các dấu gạch này.
+
+98
+00:05:55,930 --> 00:06:00,220
+Hiện tại chúng ta có căn lề trên thành phần paragraph này, đó là
+
+99
+00:06:00,220 --> 00:06:06,110
+căn lề trên 16px. Tôi thực sự đã bỏ đi phần căn lề dưới vì vậy bạn sẽ thấy rằng
+
+100
+00:06:06,110 --> 00:06:10,560
+không có gì ở dưới cả, nhưng nếu đặt giá trị đó là mặc định thì
+
+101
+00:06:10,560 --> 00:06:12,680
+chúng ta sẽ thấy giá trị đó hiện ra ở đây.
+
+102
+00:06:12,680 --> 00:06:17,050
+Đây chỉ là một công cụ báo hiệu nhưng nó thực sự giúp chúng ta hàng ngày.
+
+103
+00:06:17,050 --> 00:06:22,259
+Điều mà công cụ này thực sự hỗ trợ đó là nếu chúng ta muốn thêm các định dạng bổ sung vào đoạn paragraph này,
+
+104
+00:06:22,259 --> 00:06:27,399
+thì chúng ta thực sự có thể làm điều đó từ khu vực này. Có thể thấy các kiểu định dạng ở đây
+
+105
+00:06:27,399 --> 00:06:31,099
+đã được áp dụng thông qua tệp tin app.css. Một điều nữa mà khu vực này làm là
+
+106
+00:06:31,100 --> 00:06:35,740
+thêm vào sau dấu hai chấm số hiệu dòng của các định dạng nữa.
+
+107
+00:06:35,740 --> 00:06:40,009
+Chúng ta có thể click vào đó và đi đến tab sources.
+
+108
+00:06:40,009 --> 00:06:43,219
+Tab này không chỉ được xem xét trong chuỗi bài học này.
+
+109
+00:06:43,220 --> 00:06:46,260
+Ở đây tab này chỉ đơn giản là chứa
+
+110
+00:06:46,459 --> 00:06:50,659
+các tệp tin được tải từ trang.
+
+111
+00:06:50,660 --> 00:06:55,370
+Vì vậy lúc này chúng ta có thể xem tệp tin hiện tại và được tự động đưa đến dòng số 5,
+
+112
+00:06:55,370 --> 00:06:59,080
+nơi mà các định dạng được áp dụng theo mức đã chọn.
+
+113
+00:06:59,279 --> 00:07:02,289
+Trở lại tab kiểm tra các thành phần,
+
+114
+00:07:02,290 --> 00:07:06,189
+làm thế nào để thêm hay sửa các kiểu định dạng trong khu vực này?
+
+115
+00:07:06,189 --> 00:07:10,089
+Chúng ta có thể thực hiện bằng cách click vào
+
+116
+00:07:10,089 --> 00:07:13,859
+một giá trị của kiểu định dạng
+
+117
+00:07:13,860 --> 00:07:17,040
+và chỉnh sửa giá trị. Vậy chúng ta có thể nói mình muốn
+
+118
+00:07:17,339 --> 00:07:20,989
+căn lề 20px ở phía dưới, rồi click khỏi giá trị này.
+
+119
+00:07:20,990 --> 00:07:23,830
+Điều đó sẽ thêm vào 20px căn lề phía dưới.
+
+120
+00:07:24,029 --> 00:07:27,839
+Và bạn có thể thấy điều đó biểu diễn bằng khu vực màu cam trên trang
+
+121
+00:07:27,839 --> 00:07:31,319
+ở đó và thậm chí chúng ta có thể thêm vào các kiểu định dạng mới.
+
+122
+00:07:31,319 --> 00:07:34,349
+Giả sử bạn muốn khôi phục lại giá trị này về 0,
+
+123
+00:07:34,350 --> 00:07:38,100
+và muốn thêm một số thứ nữa trên đoạn paragraph này.
+
+124
+00:07:38,100 --> 00:07:41,080
+Giả sử vì nguyên nhân nào đó chúng ta muốn
+
+125
+00:07:41,279 --> 00:07:46,319
+độ rộng 50%, đường biên dày 1px,
+
+126
+00:07:46,319 --> 00:07:49,360
+theo kiểu solid và có màu đen.
+
+127
+00:07:49,360 --> 00:07:54,009
+Chúng ta hoàn toàn có thể làm như vậy. Sau đó đi tiếp và nói thêm:
+
+128
+00:07:54,009 --> 00:07:58,370
+cho chúng tôi màu nền trước
+
+129
+00:07:58,370 --> 00:08:02,899
+là màu đỏ (thứ gì đó thật là xấu), giờ thì chúng ta đã có tất cả các kiểu định dạng.
+
+130
+00:08:02,899 --> 00:08:06,109
+Chúng ta sẽ không tải lại trang vì điều đó sẽ
+
+131
+00:08:06,110 --> 00:08:07,060
+kéo về
+
+132
+00:08:07,060 --> 00:08:11,620
+tệp tin app.css và áp dụng lại các kiểu định dạng mà chúng ta đang có trong đó.
+
+133
+00:08:11,620 --> 00:08:15,199
+Đây thực sự là cách hữu ích để phát triển bên trong trình duyệt.
+
+134
+00:08:15,199 --> 00:08:18,529
+Vì chúng ta thực sự có thể xem các thay đổi trực tiếp
+
+135
+00:08:18,529 --> 00:08:22,689
+trên trang, sau đó có thể tiếp tục và sao chép
+
+136
+00:08:22,689 --> 00:08:26,969
+tất cả những đoạn mã này, hay chỉ những đoạn mà bạn muốn và dán vào clipboard.
+
+137
+00:08:26,970 --> 00:08:30,170
+Và sau đó đi vào đây và chỉ cần dán chúng vào
+
+138
+00:08:30,170 --> 00:08:34,580
+và bạn có thể căn chỉnh lại nếu muốn.
+
+139
+00:08:34,580 --> 00:08:38,970
+Giờ thì chúng ta đã có tất cả các kiểu định dạng ở đây và mọi thứ đã như mong muốn.
+
+140
+00:08:39,269 --> 00:08:43,439
+Chúng ta có thể đi tiếp và tải lại, và sẽ thấy các định dạng như trước được áp dụng một cách chính thức vì
+
+141
+00:08:43,440 --> 00:08:45,100
+bạn vừa sao chép các định dạng đã kiểm tra vào trang định dạng.
+
+142
+00:08:45,299 --> 00:08:48,479
+Đó là một cách thực sự hữu ích cho việc phát triển.
+
+143
+00:08:48,480 --> 00:08:51,830
+Còn về phần ở trên này thì sao?
+
+144
+00:08:51,830 --> 00:08:54,970
+Tất cả đoạn này nghĩa là các kiểu định dạng inline,
+
+145
+00:08:54,970 --> 00:08:58,700
+vậy chúng ta có thể chẳng hạn như là đi tiếp và
+
+146
+00:08:58,700 --> 00:09:01,870
+cài đặt chiều cao của thành phần này là 100px.
+
+147
+00:09:02,169 --> 00:09:05,409
+Thuộc tính đó sẽ được áp dụng ở đây. Ngoài ra bạn cũng sẽ thấy
+
+148
+00:09:05,409 --> 00:09:08,539
+thuộc tính kiểu định dạng này được thêm vào đây.
+
+149
+00:09:08,539 --> 00:09:11,990
+Bạn sẽ không dùng kiểu này thường xuyên, nhưng sẽ là hữu ích khi biết kiểu đó được hiển thị ở chỗ này,
+
+150
+00:09:11,990 --> 00:09:12,720
+trong trường hợp viết inline.
+
+151
+00:09:12,720 --> 00:09:16,970
+Chúng ta sẽ tiếp tục và xem các mục ở góc này.
+
+152
+00:09:16,970 --> 00:09:21,870
+Đối với các mục đó, chúng ta sẽ đi tiếp và thực hiện xóa bỏ các kiểu định dạng ở đây.
+
+153
+00:09:21,870 --> 00:09:25,179
+Tôi sẽ xóa bỏ đoạn paragraph này.
+
+154
+00:09:25,179 --> 00:09:28,799
+Và tạo một điểm neo. Ta sẽ tiếp tục
+
+155
+00:09:28,799 --> 00:09:35,409
+thêm vào Click me và thêm vào thuộc tính class ở đây để cho bạn thấy chúng ta có thể
+
+156
+00:09:35,409 --> 00:09:39,329
+làm gì với class. Vì vậy tôi sẽ đặt tên class là link.
+
+157
+00:09:39,330 --> 00:09:40,129
+
+
+158
+00:09:40,129 --> 00:09:43,549
+Chúng ta sẽ dùng class này làm một ví dụ.
+
+159
+00:09:43,549 --> 00:09:47,059
+Hiện tại chúng ta có một class ở đây với tên là link, giờ thì tôi sẽ thêm vào một kiểu định dạng mới trong đó.
+
+160
+00:09:47,059 --> 00:09:51,239
+Chỉ có một liên kết Click me ở đây, nếu tôi click lên thành phần này thì bạn có thể thấy rằng,
+
+161
+00:09:51,240 --> 00:09:53,480
+chúng ta có trình chọn tương ứng bên này cho phép thực hiện
+
+162
+00:09:53,480 --> 00:09:57,389
+chính xác những gì mình muốn với trình chọn. Tôi sẽ thay đổi màu thành màu đỏ nếu muốn.
+
+163
+00:09:57,389 --> 00:10:01,730
+Và đó là tất cả những gì cần làm. Tiếp tục sao chép và dán chúng vào đây
+
+164
+00:10:01,730 --> 00:10:02,350
+như bình thường.
+
+165
+00:10:02,350 --> 00:10:05,879
+Trang sẽ hoạt động đúng như cách mà các class hay ID
+
+166
+00:10:05,879 --> 00:10:10,809
+hay bất kỳ trình chọn nào bạn đã thiết lập. Điều mà chúng ta sẽ xem bây giờ là
+
+167
+00:10:10,809 --> 00:10:14,169
+cái nút ở đây, nút này cho phép chúng ta
+
+168
+00:10:14,169 --> 00:10:18,120
+thêm vào một kiểu định dạng. Vì vậy về cơ bản thì đó là việc tạo thêm luật
+
+169
+00:10:18,120 --> 00:10:19,159
+định dạng mới.
+
+170
+00:10:19,159 --> 00:10:22,240
+Giả sử trên trang của mình,
+
+171
+00:10:22,240 --> 00:10:26,169
+bạn chẳng có gì
+
+172
+00:10:26,169 --> 00:10:31,370
+trong tệp tin CSS và cũng không có gì ngoài một class link
+
+173
+00:10:31,370 --> 00:10:35,330
+ở đây. Thì thật dễ dàng để tạo ra một trình chọn ở đây chỉ bằng cách click
+
+174
+00:10:35,330 --> 00:10:35,710
+lên đó.
+
+175
+00:10:35,909 --> 00:10:39,240
+Việc click lên nút này sẽ tự động thêm
+
+176
+00:10:39,240 --> 00:10:42,450
+một loại thành phần như vậy nên bạn không cần phải gõ chúng.
+
+177
+00:10:42,450 --> 00:10:46,750
+Một điều nữa mà bạn có thể thực hiện đó là nói rằng mình muốn tô màu đỏ.
+
+178
+00:10:46,750 --> 00:10:50,169
+Tiếp tục sao chép đoạn mã đó và đi qua bên này.
+
+179
+00:10:50,169 --> 00:10:55,179
+Rồi chỉ cần dán vào là xong. Việc này giúp cho chúng ta thao tác dễ dàng hơn một chút.
+
+180
+00:10:55,179 --> 00:10:58,669
+Ngoài ra bạn có thể bỏ phần đầu của thành phần thẻ a đi,
+
+181
+00:10:58,669 --> 00:10:59,169
+và chỉ
+
+182
+00:10:59,169 --> 00:11:02,669
+thêm vào phần class nếu bạn muốn áp dụng thẳng vào lớp đó.
+
+183
+00:11:02,669 --> 00:11:06,279
+Lý do mà tôi đã chọn class link ở đây là vì chúng ta có
+
+184
+00:11:06,279 --> 00:11:10,189
+nút này ở đây, nút này cho phép chúng ta chuyển đổi
+
+185
+00:11:10,190 --> 00:11:13,370
+giữa các trình chọn theo trạng thái
+
+186
+00:11:13,370 --> 00:11:17,419
+trên các thành phần. Ví dụ nếu chúng ta
+
+187
+00:11:17,419 --> 00:11:21,579
+xóa bỏ thành phần này đi và trở về link theo đúng chuẩn,
+
+188
+00:11:21,580 --> 00:11:25,220
+thì như đã biết là khi click lên link này, nó sẽ chuyển
+
+189
+00:11:25,220 --> 00:11:29,600
+thành màu tím mặc định thường thấy trong trình duyệt. Hay chẳng hạn như nếu chúng ta
+
+190
+00:11:29,600 --> 00:11:30,250
+chuyển sang
+
+191
+00:11:30,250 --> 00:11:35,529
+trạng thái visited, thì bạn có thể thấy sự thay đổi rất nhỏ
+
+192
+00:11:35,529 --> 00:11:39,110
+về màu sắc từ màu xanh da trời sang màu tím.
+
+193
+00:11:39,110 --> 00:11:42,570
+Ngoài ra chúng ta cũng có thể chuyển sang trạng thái hover.
+
+194
+00:11:42,570 --> 00:11:45,590
+Trong trường hợp này thì trạng thái này không làm gì cả. Chúng ta có thể chuyển sang trạng thái active.
+
+195
+00:11:45,789 --> 00:11:49,719
+Trong trường hợp này link sẽ chuyển sang màu đỏ, cho nên khi tôi click vào đó và giữ
+
+196
+00:11:49,720 --> 00:11:53,519
+con trỏ ở đó, thì bạn có thể thấy link có màu đỏ, tức là ở trạng thái active.
+
+197
+00:11:53,519 --> 00:11:57,519
+Và chúng ta cũng có trạng thái focus nữa. Trạng thái này nhấn mạnh link này,
+
+198
+00:11:57,519 --> 00:12:00,860
+bằng cách thêm đường biên màu xanh xung quanh.
+
+199
+00:12:00,860 --> 00:12:04,529
+Tính năng này cho phép chuyển đổi giữa các trạng thái khác nhau.
+
+200
+00:12:04,529 --> 00:12:07,879
+Chẳng hạn những gì bạn có thể làm
+
+201
+00:12:07,879 --> 00:12:11,189
+đó là chuyển qua trang định dạng
+
+202
+00:12:11,190 --> 00:12:14,260
+rồi gõ vào link:hover.
+
+203
+00:12:14,559 --> 00:12:18,209
+Khi di chuyển chuột qua link này thì tôi muốn
+
+204
+00:12:18,210 --> 00:12:21,880
+thuộc tính font-weight được tô đậm là bold (một ví dụ hơi ngớ ngẩn một chút
+
+205
+00:12:22,179 --> 00:12:25,579
+nhưng chỉ dùng để minh họa thôi mà). Vậy thì với
+
+206
+00:12:25,580 --> 00:12:28,750
+các kiểu CSS được định dạng trước, nếu chúng ta di chuyển chuột qua
+
+207
+00:12:28,750 --> 00:12:32,529
+trình chọn ở đây, thì bạn sẽ có
+
+208
+00:12:32,529 --> 00:12:36,139
+phông chữ được tô đậm. Giờ thì nếu tôi chuyển sang trạng thái hover,
+
+209
+00:12:36,139 --> 00:12:40,039
+thì việc đó cũng sẽ chuyển qua lại giữa các định dạng trong trang định dạng của tôi.
+
+210
+00:12:40,039 --> 00:12:43,179
+Vậy điều gì xảy ra, nếu bạn quy định trong trang định dạng của mình,
+
+211
+00:12:43,179 --> 00:12:47,039
+nếu bạn ghi đè hành vi mặc định ở đây, thì việc chuyển đổi giữa các trạng thái sẽ được thực hiện.
+
+212
+00:12:47,039 --> 00:12:50,480
+Ngoài ra bạn cũng sẽ chú ý thấy đoạn này được hiển thị.
+
+213
+00:12:50,480 --> 00:12:53,380
+Vậy nếu ở đâu đó trong các định dạng của mình mà bạn có đoạn này,
+
+214
+00:12:53,679 --> 00:12:57,500
+và bạn muốn đi tiếp và sửa đoạn đó thì bạn có thể chọn mục này ở đây.
+
+215
+00:12:57,500 --> 00:13:02,620
+Rồi click hover, rồi đi tiếp thêm vào một kiểu định dạng bạn muốn, như chuyển màu thành
+
+216
+00:13:02,620 --> 00:13:03,769
+màu đỏ.
+
+217
+00:13:03,769 --> 00:13:07,169
+Rồi tiếp tục sao chép và dán bất kỳ kiểu định dạng nào mà chúng ta đã kiểm tra
+
+218
+00:13:07,169 --> 00:13:11,849
+như đã thấy trước đó. Bây giờ hãy đi tiếp và làm mới trang.
+
+219
+00:13:11,850 --> 00:13:15,610
+Sau đó chúng ta đã có kết quả đúng như đã thấy ở đây.
+
+220
+00:13:15,610 --> 00:13:20,110
+Theo công cụ kiểm tra thành phần này thì có nhiều thứ nữa bạn có thể làm
+
+221
+00:13:20,110 --> 00:13:20,750
+trong đó.
+
+222
+00:13:20,750 --> 00:13:24,289
+Nhưng thường thì khi bạn đang phát triển mặt front-end,
+
+223
+00:13:24,289 --> 00:13:27,849
+thì bạn sẽ sử dụng những gì mà tôi vừa cho bạn xem
+
+224
+00:13:27,850 --> 00:13:31,570
+thường xuyên nhất. Khu vực thường xuyên sử dụng nhất này
+
+225
+00:13:31,570 --> 00:13:34,700
+chủ yếu là
+
+226
+00:13:34,899 --> 00:13:38,470
+các đoạn mã markup trên trang của bạn.
+
+227
+00:13:38,470 --> 00:13:41,110
+Và cả khu vực này nữa, khu vực mà liên quan tới các kiểu định dạng.
+

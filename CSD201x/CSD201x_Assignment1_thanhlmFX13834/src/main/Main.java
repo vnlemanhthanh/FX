@@ -84,9 +84,8 @@ public class Main {
                         float value = Float.parseFloat(sc.nextLine());
 
                         algo = new Algorithm(arr);
-                        algo.insertionSort(algo.getArray());
 
-                        algo.binarySearch(arr, value);
+                        algo.binarySearch(algo.getArray(), value);
 
                         System.out.print(" enter 0 to go to Menu, are you continous? ");
                         choice = Integer.parseInt(sc.nextLine());

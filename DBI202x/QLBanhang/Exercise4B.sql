@@ -1,0 +1,4 @@
+USE QLBanhang;
+
+INSERT INTO VatTu (MaVT, TenVT, DVT, GiaMua, SLTon)
+VALUES ('VT01', 'XI MANG', 'BAO', 50000, 5000);

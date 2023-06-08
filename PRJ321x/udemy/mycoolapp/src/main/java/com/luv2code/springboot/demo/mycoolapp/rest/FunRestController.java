@@ -9,6 +9,6 @@ public class FunRestController {
     //expose "/" that return "Hello World"
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World!";
+        return "Hello Thanh!";
     }
 }

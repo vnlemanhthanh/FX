@@ -18,7 +18,7 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 
 		return runner -> {
-			createSudent(studentDAO);
+			// createSudent(studentDAO);
 			createMultipleStudents(studentDAO);
 		};
 	}

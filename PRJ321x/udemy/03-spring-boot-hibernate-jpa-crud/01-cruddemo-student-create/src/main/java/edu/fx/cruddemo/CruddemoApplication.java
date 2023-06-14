@@ -38,7 +38,7 @@ public class CruddemoApplication {
 		// change first name to "Scooby"
 		System.out.println("Updating student ...");
 		myStudent.setFirstName("Scooby");
-		myStudent.setFirstName("John");
+		// myStudent.setFirstName("John");
 
 
 		// update the student

@@ -1,3 +1,4 @@
+package edu.fx;
 
 
 public interface Coach {

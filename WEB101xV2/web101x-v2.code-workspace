@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "lab"
+	},
+	{
+		"path": "html-css-course-master"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "lab"
+  },
+  "extensions": {
+    "recommendations": ["ritwickdey.liveserver"]
+  }
+}

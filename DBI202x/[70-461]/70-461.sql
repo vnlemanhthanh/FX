@@ -1,3 +1,6 @@
+CREATE DATABASE [70-461]
+go
+
 USE [70-461]
 GO
 
@@ -8,9 +11,10 @@ EmployeeNumber INT NOT NULL,
 EmployeeFirstName VARCHAR(50) NOT NULL,
 EmployeeMiddleName VARCHAR(50),
 EmployeeLastName VARCHAR(50) NOT NULL,
-EMployeeGovermentID CHAR(10),
+EmployeeGovermentID CHAR(10),
 DateOfBirth DATE NOT NULL
 )
+
 
 DROP TABLE tblSecond
 

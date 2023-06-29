@@ -10,7 +10,7 @@ select min(EmployeeNumber) as MinNumber, max(EmployeeNumber) as MaxNumber
 from tblEmployee
 
 --4. Subquery – WHERE
-select * --T.* , E.EmployeeLastName
+select T.* , E.EmployeeLastName
 from tblTransaction as T
  join tblEmployee as E
 on E.EmployeeNumber = T.EmployeeNumber
@@ -37,22 +37,22 @@ Where EmployeeNumber not in
     (Select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
 order by EmployeeNumber -- must be in tblTransaction, and not 126-129
                         -- LEFT JOIN
-6. Subquery – WHERE and ANY, SOME and ALL
+--6. Subquery – WHERE and ANY, SOME and ALL
 select * 
 from tblTransaction as T
 Where EmployeeNumber = some -- or "some"
     (Select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
-order by EmployeeNumber
+order by EmployeeNumber asc
 
 select * 
 from tblTransaction as T
 Where EmployeeNumber <> any -- does not work properly
     (Select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
-order by EmployeeNumber
+order by EmployeeNumber asc
 
 select * 
 from tblTransaction as T
-Where EmployeeNumber <> all 
+Where EmployeeNumber  <> all 
     (Select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
 order by EmployeeNumber
 
@@ -60,7 +60,7 @@ select *
 from tblTransaction as T
 Where EmployeeNumber <= all
     (Select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
-order by EmployeeNumber
+order by EmployeeNumber desc
 
 -- anything up to 126 AND
 -- anything up to 127 AND
@@ -80,11 +80,13 @@ order by EmployeeNumber
 -- 126 <> any(126,127,128,129)
 -- 126<>126 OR 126<>127 OR 126<>128 OR 126<>129
 -- FALSE    OR TRUE = TRUE
-7. Subqueries in the FROM clause
+
+
+--7. Subqueries in the FROM clause
 select * 
 from tblTransaction as T
 left join (select * from tblEmployee
-where EmployeeLastName like 'y%') as E
+where EmployeeLastName  not like 'y%') as E
 on E.EmployeeNumber = T.EmployeeNumber
 order by T.EmployeeNumber
 
@@ -92,7 +94,7 @@ select *
 from tblTransaction as T
 left join tblEmployee as E
 on E.EmployeeNumber = T.EmployeeNumber
-Where E.EmployeeLastName like 'y%'
+Where E.EmployeeLastName not like 'y%'
 order by T.EmployeeNumber
 
 select * 
@@ -101,8 +103,9 @@ left join tblEmployee as E
 on E.EmployeeNumber = T.EmployeeNumber
 and E.EmployeeLastName like 'y%'
 order by T.EmployeeNumber
-8. Subquery – Select Clause
-Select *, (select count(EmployeeNumber)
+
+--8. Subquery – Select Clause
+Select * ,(select count(EmployeeNumber)
            from tblTransaction as T
 		   where T.EmployeeNumber = E.EmployeeNumber) as NumTransactions,
 		  (Select sum(Amount)
@@ -110,7 +113,8 @@ Select *, (select count(EmployeeNumber)
 		   where T.EmployeeNumber = E.EmployeeNumber) as TotalAmount
 from tblEmployee as E
 Where E.EmployeeLastName like 'y%' --correlated subquery
-Remainder
+
+--Remainder
 select * 
 from tblTransaction as T
 Where exists 
@@ -122,7 +126,8 @@ from tblTransaction as T
 Where not exists 
     (Select EmployeeNumber from tblEmployee as E where EmployeeLastName like 'y%' and T.EmployeeNumber = E.EmployeeNumber)
 order by EmployeeNumber
-10. Top X from various categories
+
+--10. Top X from various categories
 select * from
 (select D.Department, EmployeeNumber, EmployeeFirstName, EmployeeLastName,
        rank() over(partition by D.Department order by E.EmployeeNumber) as TheRank
@@ -131,7 +136,7 @@ select * from
 where TheRank <= 5
 order by Department, EmployeeNumber
 
-11. With Statement
+--11. With Statement
 
 with tblWithRanking as
 (select D.Department, EmployeeNumber, EmployeeFirstName, EmployeeLastName,
@@ -155,7 +160,8 @@ select * from tblWithRanking
 left join Transaction2014 on tblWithRanking.EmployeeNumber = Transaction2014.EmployeeNumber
 where TheRank <= 5
 order by Department, tblWithRanking.EmployeeNumber
-12. Exercise 1
+
+--12. Exercise 1
 select E.EmployeeNumber from tblEmployee as E 
 left join tblTransaction as T
 on E.EmployeeNumber = T.EmployeeNumber
@@ -175,7 +181,8 @@ where T.EmployeeNumber is null
 order by U.RowNumber
 
 select row_number() over(order by(select null)) from sys.objects O cross join sys.objects P
-13. Exercise 2
+
+--13. Exercise 2
 with Numbers as (
 select top(select max(EmployeeNumber) from tblTransaction) row_Number() over(order by (select null)) as RowNumber
 from tblTransaction as U),
@@ -199,14 +206,14 @@ from tblGroup
 group by TheGroup
 order by TheGroup
 
-14. Pivot
+--14. Pivot
 with myTable as
 (select year(DateOfTransaction) as TheYear, month(DateOfTransaction) as TheMonth, Amount from tblTransaction)
 
 select * from myTable
 PIVOT (sum(Amount) for TheMonth in ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])) as myPvt
 ORDER BY TheYear 
-15. Replacing Nulls with Zeros in Pivot
+--15. Replacing Nulls with Zeros in Pivot
 with myTable as
 (select year(DateOfTransaction) as TheYear, month(DateOfTransaction) as TheMonth, Amount from tblTransaction)
 
@@ -224,12 +231,14 @@ select TheYear, isnull([1],0) as [1],
 				isnull([12],0) as [12] from myTable
 PIVOT (sum(Amount) for TheMonth in ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])) as myPvt
 ORDER BY TheYear 
-16. UnPivot
+
+--16. UnPivot
 SELECT *
   FROM [tblPivot]
 UNPIVOT (Amount FOR Month IN ([1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12])) AS tblUnPivot
 where Amount <> 0
-17. Self Joins
+
+--17. Self Joins
 begin tran
 alter table tblEmployee
 add Manager int
@@ -245,7 +254,8 @@ left JOIN tblEmployee as M
 on E.Manager = M.EmployeeNumber
 
 rollback tran
-18. Recursive CTE
+
+--18. Recursive CTE
 begin tran
 alter table tblEmployee
 add Manager int
@@ -266,7 +276,8 @@ join myTable on E.Manager = myTable.EmployeeNumber
 select * from myTable
 
 rollback tran
-19. Scalar Functions 1
+
+--19. Scalar Functions 1
 CREATE FUNCTION AmountPlusOne(@Amount smallmoney)
 RETURNS smallmoney
 AS
@@ -284,7 +295,8 @@ from tblTransaction
 DECLARE @myValue smallmoney
 EXEC @myValue = dbo.AmountPlusOne @Amount = 345.67
 select @myValue
-20. Scalar Functions 2
+
+--20. Scalar Functions 2
 
 if object_ID(N'NumberOfTransactions',N'FN') IS NOT NULL
 	DROP FUNCTION NumberOfTransactions
@@ -298,7 +310,8 @@ BEGIN
 	WHERE EmployeeNumber = @EmployeeNumber
 	RETURN @NumberOfTransactions
 END
-21. Inline Table Function
+
+--21. Inline Table Function
 CREATE FUNCTION TransactionList(@EmployeeNumber int)
 RETURNS TABLE AS RETURN
 (
@@ -321,7 +334,8 @@ on E.EmployeeNumber = T.EmployeeNumber
 select *
 from tblEmployee as E
 where exists(Select EmployeeNumber from tblTransaction as T where E.EmployeeNumber = T.EmployeeNumber)
-22. Apply
+
+--22. Apply
 SELECT * 
 from dbo.TransList(123)
 GO
@@ -349,7 +363,8 @@ cross apply TransList(E.EmployeeNumber) as T
 select *
 from tblEmployee as E
 where  (select count(*) from dbo.TransList(E.EmployeeNumber)) >3
-23. Synonyms
+
+--23. Synonyms
 create synonym EmployeeTable
 for tblEmployee
 go
@@ -367,7 +382,8 @@ for OVERTHERE.70-461remote.dbo.tblRemote
 go
 
 select * from RemoteTable
-24. Dynamic Queries
+
+--24. Dynamic Queries
 select * from tblEmployee where EmployeeNumber = 129;
 go
 declare @command as varchar(255);

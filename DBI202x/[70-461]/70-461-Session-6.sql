@@ -118,13 +118,17 @@ Where E.EmployeeLastName like 'y%' --correlated subquery
 select * 
 from tblTransaction as T
 Where exists 
-    (Select EmployeeNumber from tblEmployee as E where EmployeeLastName like 'y%' and T.EmployeeNumber = E.EmployeeNumber)
+    (Select EmployeeNumber from tblEmployee as E 
+		where EmployeeLastName like 'y%' 
+		and T.EmployeeNumber = E.EmployeeNumber)
 order by EmployeeNumber
 
 select * 
 from tblTransaction as T
 Where not exists 
-    (Select EmployeeNumber from tblEmployee as E where EmployeeLastName like 'y%' and T.EmployeeNumber = E.EmployeeNumber)
+    (Select EmployeeNumber from tblEmployee as E 
+		where EmployeeLastName like 'y%' 
+		and T.EmployeeNumber = E.EmployeeNumber)
 order by EmployeeNumber
 
 --10. Top X from various categories
@@ -142,7 +146,7 @@ with tblWithRanking as
 (select D.Department, EmployeeNumber, EmployeeFirstName, EmployeeLastName,
        rank() over(partition by D.Department order by E.EmployeeNumber) as TheRank
  from tblDepartment as D 
- join tblEmployee as E on D.Department = E.Department
+ join tblEmployee as E on D.Department = E.Department)
 
 select * from tblWithRanking 
 where TheRank <= 5
@@ -680,12 +684,18 @@ left join [dbo].[tblTransaction] as T
 on E.EmployeeNumber = T.EmployeeNumber
 where E.EmployeeNumber between 200 and 202
 for xml raw, xmlschema --, xmldata
-i4  or int	Int	Whole number, integer
-Boolean		Boolean logical value (0 or 1)
-dateTime.iso8601	Datetime	Date and time in ISO 8601format
-Double		Double precision floating point number
-String	Varchar	String of characters. Must follow XML encoding.
-Nil	Null	Discriminated null value; an XML-RPC extension
+i4  or int	Int	Whole number, integer
+
+Boolean		Boolean logical value (0 or 1)
+
+dateTime.iso8601	Datetime	Date and time in ISO 8601format
+
+Double		Double precision floating point number
+
+String	Varchar	String of characters. Must follow XML encoding.
+
+Nil	Null	Discriminated null value; an XML-RPC extension
+
 46. XML Indexes
 declare @x1 xml, @x2 xml 
 set @x1='<Shopping ShopperName="Phillip Burton" >  

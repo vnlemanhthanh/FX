@@ -1,5 +1,5 @@
 * {
-  /* border-top: 10px solid #1098ad; */
+  /* border: 0.1px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
@@ -11,6 +11,8 @@ body {
 
   border-top: 10px solid #1098ad;
   position: relative;
+  /* margin: 10px;
+  padding: 10px; */
 }
 
 .container {
@@ -223,7 +225,7 @@ h1::first-letter {
 }
 
 h3 + p::first-line {
-  /* color: red; */
+  color: red;
 }
 
 h2 {

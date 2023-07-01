@@ -173,7 +173,7 @@ ORDER BY EmployeeNumber
 
 select * from tblEmployee 
 
-select * from tblTransaction where EmployeeNumber = 1046
+select * from tblTransaction where EmployeeNumber = 1046;
 
 --Creating a third table
 select Department as NumberOfDepartments, convert(varchar(20), N'') as DepartmentHead
@@ -181,7 +181,7 @@ into tblDepartment2
 from
 (select Department, count(*) as NumberPerDepartment
 from tblEmployee
-GROUP BY Department) as newTable
+GROUP BY Department) as newTable;
 
 --derived table
 
@@ -299,8 +299,10 @@ group by E.EmployeeNumber, T.EmployeeNumber, E.EmployeeFirstName,
 where ENumber is null)
 select count(*) from tblTransaction
 rollback tran
+
 select count(*) from tblTransaction
-Updating data
+
+--Updating data
 select * from tblEmployee where EmployeeNumber = 194
 select * from tblTransaction where EmployeeNumber = 3
 select * from tblTransaction where EmployeeNumber = 194

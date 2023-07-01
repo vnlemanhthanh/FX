@@ -134,7 +134,7 @@ order by EmployeeNumber
 --10. Top X from various categories
 select * from
 (select D.Department, EmployeeNumber, EmployeeFirstName, EmployeeLastName,
-       rank() over(partition by D.Department order by E.EmployeeNumber) as TheRank
+       rank() over(partition by d.Department order by E.EmployeeNumber) as TheRank
  from tblDepartment as D 
  join tblEmployee as E on D.Department = E.Department) as MyTable
 where TheRank <= 5
@@ -166,7 +166,7 @@ where TheRank <= 5
 order by Department, tblWithRanking.EmployeeNumber
 
 --12. Exercise 1
-select E.EmployeeNumber from tblEmployee as E 
+select E.EmployeeNumber,* from tblEmployee as E 
 left join tblTransaction as T
 on E.EmployeeNumber = T.EmployeeNumber
 where T.EmployeeNumber IS NULL
@@ -175,16 +175,20 @@ order by E.EmployeeNumber
 select max(EmployeeNumber) from tblTransaction;
 
 with Numbers as (
-select top(select max(EmployeeNumber) from tblTransaction) row_Number() over(order by (select null)) as RowNumber
+select top(select max(EmployeeNumber) from tblTransaction) 
+	row_Number() over(order by (select null)) as RowNumber
 from tblTransaction as U)
 
-select U.RowNumber from Numbers as U
+select --top(select max(EmployeeNumber) from tblTransaction) 
+	U.RowNumber
+from Numbers as U
 left join tblTransaction as T
 on U.RowNumber = T.EmployeeNumber
 where T.EmployeeNumber is null
 order by U.RowNumber
 
-select row_number() over(order by(select null)) from sys.objects O cross join sys.objects P
+select row_number() over(order by(select null)), *
+from sys.objects O cross join sys.objects P;
 
 --13. Exercise 2
 with Numbers as (
@@ -204,6 +208,7 @@ where T.EmployeeNumber is null),
 tblGroup as (
 select *, sum(GroupGap) over (ORDER BY RowNumber) as TheGroup
 from tblGap)
+
 select Min(RowNumber) as StartingEmployeeNumber, Max(RowNumber) as EndingEmployeeNumber,
        Max(RowNumber) - Min(RowNumber) + 1 as NumberEmployees
 from tblGroup

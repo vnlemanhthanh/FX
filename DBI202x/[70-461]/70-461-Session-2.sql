@@ -66,7 +66,7 @@ where EmployeeLastName like '[_]%'
 select * from tblEmployee
 where EmployeeLastName like '`%%' ESCAPE '`'
 
---SELECTing only part of a table – numbers
+--SELECTing only part of a table ï¿½ numbers
 
 select * from tblEmployee
 where not EmployeeNumber>200

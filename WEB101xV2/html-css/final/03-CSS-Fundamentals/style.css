@@ -234,7 +234,7 @@ h2 {
 }
 
 h2::before {
-  content: "TOP";
+  content: "TOP HIT";
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;

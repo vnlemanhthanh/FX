@@ -1,3 +1,3 @@
-SELECT MAX(SALARY*MONTHS), COUNT(*)
-FROM EMPLOYEE
-WHERE (SALARY*MONTHS) = (SELECT MAX(SALARY*MONTHS) FROM EMPLOYEE)
+SELECT max(salary * months), COUNT(*)
+FROM Employee
+WHERE (salary * months) = (select max(salary * months) from Employee)

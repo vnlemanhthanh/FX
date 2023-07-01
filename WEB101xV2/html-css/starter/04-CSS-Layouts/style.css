@@ -240,8 +240,8 @@ h2::before {
   display: inline-block;
   padding: 5px 10px;
   position: absolute;
-  top: -10px;
   right: -25px;
+  top: -10px;
 }
 
 /* Resolving conflicts */
@@ -265,3 +265,15 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+.author-img {
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}

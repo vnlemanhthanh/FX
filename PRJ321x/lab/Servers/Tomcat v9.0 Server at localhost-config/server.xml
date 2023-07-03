@@ -109,7 +109,7 @@
 				<Context docBase="lab4.2" path="/lab4.2" reloadable="true" source="org.eclipse.jst.jee.server:lab4.2"/>
 				<Context docBase="lab4.6" path="/lab4.6" reloadable="true" source="org.eclipse.jst.jee.server:lab4.6"/>
 				<Context docBase="lab4.7" path="/lab4.7" reloadable="true" source="org.eclipse.jst.jee.server:lab4.7"/>
-			<Context docBase="lab5.1" path="/lab5.1" reloadable="true" source="org.eclipse.jst.jee.server:lab5.1"/></Host>
+			<Context docBase="lab5.1" path="/lab5.1" reloadable="true" source="org.eclipse.jst.jee.server:lab5.1"/><Context docBase="lab5.2" path="/lab5.2" reloadable="true" source="org.eclipse.jst.jee.server:lab5.2"/><Context docBase="lab5.3" path="/lab5.3" reloadable="true" source="org.eclipse.jst.jee.server:lab5.3"/></Host>
 		</Engine>
 	</Service>
 </Server>

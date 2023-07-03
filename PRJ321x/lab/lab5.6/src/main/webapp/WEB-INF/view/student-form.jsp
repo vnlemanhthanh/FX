@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Confirmation</title>
+<title>Student Registration Form</title>
 </head>
 <body>
 
 	<form:form action="processForm" modelAttribute="student">
+		
 		First name: <form:input path="firstName" />
 
 		<br>

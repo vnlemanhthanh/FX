@@ -11,5 +11,7 @@ import javax.validation.Constraint;
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CourseCode {
-
+	public String value() default "LUV";
+	
+	public String message() default "must start with LUV";
 }

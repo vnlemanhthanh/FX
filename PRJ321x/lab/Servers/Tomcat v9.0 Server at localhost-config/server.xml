@@ -109,7 +109,20 @@
 				<Context docBase="lab4.2" path="/lab4.2" reloadable="true" source="org.eclipse.jst.jee.server:lab4.2"/>
 				<Context docBase="lab4.6" path="/lab4.6" reloadable="true" source="org.eclipse.jst.jee.server:lab4.6"/>
 				<Context docBase="lab4.7" path="/lab4.7" reloadable="true" source="org.eclipse.jst.jee.server:lab4.7"/>
-			<Context docBase="lab5.1" path="/lab5.1" reloadable="true" source="org.eclipse.jst.jee.server:lab5.1"/><Context docBase="lab5.2" path="/lab5.2" reloadable="true" source="org.eclipse.jst.jee.server:lab5.2"/><Context docBase="lab5.3" path="/lab5.3" reloadable="true" source="org.eclipse.jst.jee.server:lab5.3"/><Context docBase="lab5.6" path="/lab5.6" reloadable="true" source="org.eclipse.jst.jee.server:lab5.6"/><Context docBase="lab5.5" path="/lab5.5" reloadable="true" source="org.eclipse.jst.jee.server:lab5.5"/><Context docBase="lab5.7" path="/lab5.7" reloadable="true" source="org.eclipse.jst.jee.server:lab5.7"/><Context docBase="lab5.8" path="/lab5.8" reloadable="true" source="org.eclipse.jst.jee.server:lab5.8"/><Context docBase="lab5.9" path="/lab5.9" reloadable="true" source="org.eclipse.jst.jee.server:lab5.9"/><Context docBase="lab5.10" path="/lab5.10" reloadable="true" source="org.eclipse.jst.jee.server:lab5.10"/><Context docBase="lab6.1" path="/lab6.1" reloadable="true" source="org.eclipse.jst.jee.server:lab6.1"/><Context docBase="lab6.2" path="/lab6.2" reloadable="true" source="org.eclipse.jst.jee.server:lab6.2"/><Context docBase="lab6.3" path="/lab6.3" reloadable="true" source="org.eclipse.jst.jee.server:lab6.3"/><Context docBase="lab6.4" path="/lab6.4" reloadable="true" source="org.eclipse.jst.jee.server:lab6.4"/></Host>
+				<Context docBase="lab5.1" path="/lab5.1" reloadable="true" source="org.eclipse.jst.jee.server:lab5.1"/>
+				<Context docBase="lab5.2" path="/lab5.2" reloadable="true" source="org.eclipse.jst.jee.server:lab5.2"/>
+				<Context docBase="lab5.3" path="/lab5.3" reloadable="true" source="org.eclipse.jst.jee.server:lab5.3"/>
+				<Context docBase="lab5.6" path="/lab5.6" reloadable="true" source="org.eclipse.jst.jee.server:lab5.6"/>
+				<Context docBase="lab5.5" path="/lab5.5" reloadable="true" source="org.eclipse.jst.jee.server:lab5.5"/>
+				<Context docBase="lab5.7" path="/lab5.7" reloadable="true" source="org.eclipse.jst.jee.server:lab5.7"/>
+				<Context docBase="lab5.8" path="/lab5.8" reloadable="true" source="org.eclipse.jst.jee.server:lab5.8"/>
+				<Context docBase="lab5.9" path="/lab5.9" reloadable="true" source="org.eclipse.jst.jee.server:lab5.9"/>
+				<Context docBase="lab5.10" path="/lab5.10" reloadable="true" source="org.eclipse.jst.jee.server:lab5.10"/>
+				<Context docBase="lab6.1" path="/lab6.1" reloadable="true" source="org.eclipse.jst.jee.server:lab6.1"/>
+				<Context docBase="lab6.2" path="/lab6.2" reloadable="true" source="org.eclipse.jst.jee.server:lab6.2"/>
+				<Context docBase="lab6.3" path="/lab6.3" reloadable="true" source="org.eclipse.jst.jee.server:lab6.3"/>
+				<Context docBase="lab6.4" path="/lab6.4" reloadable="true" source="org.eclipse.jst.jee.server:lab6.4"/>
+			<Context docBase="lab9.1" path="/web-customer-tracker" reloadable="true" source="org.eclipse.jst.jee.server:lab9.1"/></Host>
 		</Engine>
 	</Service>
 </Server>

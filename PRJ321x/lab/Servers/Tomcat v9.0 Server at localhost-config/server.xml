@@ -122,7 +122,9 @@
 				<Context docBase="lab6.2" path="/lab6.2" reloadable="true" source="org.eclipse.jst.jee.server:lab6.2"/>
 				<Context docBase="lab6.3" path="/lab6.3" reloadable="true" source="org.eclipse.jst.jee.server:lab6.3"/>
 				<Context docBase="lab6.4" path="/lab6.4" reloadable="true" source="org.eclipse.jst.jee.server:lab6.4"/>
-			<Context docBase="lab9.1" path="/web-customer-tracker" reloadable="true" source="org.eclipse.jst.jee.server:lab9.1"/></Host>
+				<Context docBase="lab9.1" path="/lab9.1" reloadable="true" source="org.eclipse.jst.jee.server:lab9.1"/>
+				
+			<Context docBase="lab9.2" path="/lab9.2" reloadable="true" source="org.eclipse.jst.jee.server:lab9.2"/><Context docBase="lab9.3" path="/lab9.3" reloadable="true" source="org.eclipse.jst.jee.server:lab9.3"/><Context docBase="lab9.4" path="/lab9.4" reloadable="true" source="org.eclipse.jst.jee.server:lab9.4"/><Context docBase="lab9.5" path="/lab9.5" reloadable="true" source="org.eclipse.jst.jee.server:lab9.5"/></Host>
 		</Engine>
 	</Service>
 </Server>

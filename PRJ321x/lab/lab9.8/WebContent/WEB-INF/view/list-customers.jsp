@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- reference our style sheet -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="${pageContext.request.contextPath}/resources/css/style.css"
+    />
     <title>List Customers</title>
   </head>
 
@@ -19,15 +25,15 @@
         <th>Last Name</th>
         <th>Email</th>
       </tr>
-    </table>
 
-    <!-- loop over and print our customers -->
-    <c:forEach var="tempCustomer" items="${customers}">
-      <tr>
-        <td>${tempCustomer.firstName}</td>
-        <td>${tempCustomer.lastName}</td>
-        <td>${tempCustomer.email}</td>
-      </tr>
-    </c:forEach>
+      <!-- loop over and print our customers -->
+      <c:forEach var="tempCustomer" items="${customers}">
+        <tr>
+          <td>${tempCustomer.firstName}</td>
+          <td>${tempCustomer.lastName}</td>
+          <td>${tempCustomer.email}</td>
+        </tr>
+      </c:forEach>
+    </table>
   </body>
 </html>

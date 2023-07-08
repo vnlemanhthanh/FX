@@ -3,11 +3,10 @@
 <html>
   <head>
     <!-- reference our style sheet -->
-    <!-- href="${pageContext.request.contextPath}/resources/css/style.css" -->
     <link
       type="text/css"
       rel="stylesheet"
-      href="/resources/css/style.css"
+      href="${pageContext.request.contextPath}/resources/css/style.css"
     />
     <title>${pageContext.request.contextPath} - List Customers</title>
   </head>

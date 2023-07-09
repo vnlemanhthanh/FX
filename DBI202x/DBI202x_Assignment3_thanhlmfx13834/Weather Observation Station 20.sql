@@ -1,0 +1,6 @@
+WITH TEMP AS ( 
+    SELECT LAT_N, ROW_NUMBER() OVER(ORDER BY LAT_N) as row_num
+    FROM STATION)
+SELECT CAST(LAT_N AS DECIMAL(10,4)) as Median
+FROM temp
+WHERE row_num = (((SELECT MAX(row_num) FROM temp) + 1)/2)

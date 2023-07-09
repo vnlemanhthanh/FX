@@ -1,11 +1,14 @@
 'use strict';
 
-let x = document.querySelector('.guess');
-let y = (x.textContent = 10);
-console.log(x, '|' + y);
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 0;
 let highscore = 0;
+
+let num1 = Math.trunc(Math.random() * 10) + 1;
+let num2 = Math.trunc(Math.random() * 10) + 1;
+let sum = num1 + num2;
+
+document.querySelector('.num1').textContent = num1;
+document.querySelector('.num2').textContent = num2;
 
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
@@ -14,89 +17,53 @@ const displayMessage = function (message) {
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
+  console.log(num1, typeof num1);
+  console.log(num2, typeof num2);
 
   // When there is no input
   if (!guess) {
-    // document.querySelector('.message').textContent = '⛔️ No number!';
     displayMessage('⛔️ No number!');
+    score -= 10;
+    document.querySelector('.score').textContent = score;
 
     // When player wins
-  } else if (guess === secretNumber) {
-    // document.querySelector('.message').textContent = '🎉 Correct Number!';
+  } else if (guess === sum) {
     displayMessage('🎉 Correct Number!');
-    document.querySelector('.number').textContent = secretNumber;
+    score += 10;
 
-    document.querySelector('body').style.backgroundColor = '#60b347';
-    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('body').style.backgroundColor = 'blue';
 
-    if (score > highscore) {
-      highscore = score;
-      document.querySelector('.highscore').textContent = highscore;
-    }
+    document.querySelector('.check').style.display = 'none';
 
     // When guess is wrong
-  } else if (guess !== secretNumber) {
-    if (score > 1) {
-      // document.querySelector('.message').textContent =
-      // guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
-      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
-      score--;
-      document.querySelector('.score').textContent = score;
+  } else if (guess !== sum) {
+    score -= 10;
+
+    if (score > 0) {
+      displayMessage(guess > sum ? '📈 Too high!' : '📉 Too low!');
     } else {
-      // document.querySelector('.message').textContent = '💥 You lost the game!';
       displayMessage('💥 You lost the game!');
-      document.querySelector('.score').textContent = 0;
     }
   }
 
-  //   // When guess is too high
-  // } else if (guess > secretNumber) {
-  //   if (score > 1) {
-  //     document.querySelector('.message').textContent = '📈 Too high!';
-  //     score--;
-  //     document.querySelector('.score').textContent = score;
-  //   } else {
-  //     document.querySelector('.message').textContent = '💥 You lost the game!';
-  //     document.querySelector('.score').textContent = 0;
-  //   }
-
-  //   // When guess is too low
-  // } else if (guess < secretNumber) {
-  //   if (score > 1) {
-  //     document.querySelector('.message').textContent = '📉 Too low!';
-  //     score--;
-  //     document.querySelector('.score').textContent = score;
-  //   } else {
-  //     document.querySelector('.message').textContent = '💥 You lost the game!';
-  //     document.querySelector('.score').textContent = 0;
-  //   }
-  // }
+  document.querySelector('.score').textContent = score;
+  if (score > highscore) {
+    highscore = score;
+    document.querySelector('.highscore').textContent = highscore;
+  }
 });
 
 document.querySelector('.again').addEventListener('click', function () {
-  score = 10;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector('.check').style.display = 'inline';
 
-  // document.querySelector('.message').textContent = 'Start guessing...';
-  displayMessage('Start guessing...');
-  document.querySelector('.score').textContent = '-';
-  document.querySelector('.number').textContent = '?';
+  num1 = Math.trunc(Math.random() * 10) + 1;
+  num2 = Math.trunc(Math.random() * 10) + 1;
+  sum = num1 + num2;
+
+  displayMessage('Start ...');
+  document.querySelector('.num1').textContent = num1;
+  document.querySelector('.num2').textContent = num2;
   document.querySelector('.guess').value = '';
 
   document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
 });
-
-///////////////////////////////////////
-// Coding Challenge #1
-
-/* 
-Implement a game rest functionality, so that the player can make a new guess! Here is how:
-
-1. Select the element with the 'again' class and attach a click event handler
-2. In the handler function, restore initial values of the score and secretNumber variables
-3. Restore the initial conditions of the message, number, score and guess input field
-4. Also restore the original background color (#222) and number width (15rem)
-
-GOOD LUCK 😀
-*/

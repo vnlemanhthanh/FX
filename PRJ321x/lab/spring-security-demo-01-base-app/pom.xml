@@ -63,7 +63,7 @@
 
 	<!-- TO DO: Add support for Maven WAR Plugin -->
 	<build>
-		<finalName>lab12-1-3</finalName>
+		<finalName>spring-security-demo-01-base-app</finalName>
 
 		<pluginManagement>
 			<plugins>
